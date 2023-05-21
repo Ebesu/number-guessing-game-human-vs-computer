@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guesser</title>
+    <link rel="stylesheet" href="./number guesser.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="numberGuesser">
+                <h1>Number Guesser!</h1>
+            </div>
+            <h2 class="round">
+                Round
+                <span class="roundNumber">1</span>
+            </h2>
+            <h3 class="target">
+                Target Number:
+                <span class="targetNumber">?</span>
+            </h3>
+        </div>
+
+        <div class="gameArea">
+            <div class="computerArea">
+                <div class="computer">Computer</div>
+                <div class="computerScore">
+                    Score:
+                    <span class="computerScoreObtained">0</span>
+                </div>
+                <div class="numberGuessed">?</div>
+                <div class="computerWin">Computer Wins!!!</div>
+            </div>
+            
+            <div class="humanArea">
+                <div class="human">You</div>
+                <div class="humanScore">
+                    Score:
+                    <span class="humanScoreObtained">0</span>
+                </div>
+                <input id="humanInput" value="0" min="0" max="9">
+                <div class="numberControls">
+                    <button class="control" id="leftControl">-</button>
+                    <button class="control" id="rightControl">+</button>
+                </div>
+                <button class="guess guessed diabledGuess" >Make a Guess</button>
+            </div>
+        </div>
+        <div class="failed">Y'all failed!!! 😂</div>
+        <div>
+            <button class="round1 played">
+                Next Round
+            </burron>
+        </div>
+        <div class="instructions">
+            <div class="step1">
+                <p>Step1</p>
+                <p>Input a number between 0 and 9</p>
+            </div>
+            <div class="step1">
+                <p>Step2</p>
+                <p>Click "Make a Guess" to submit your guess and see who won the round.</p>
+            </div>
+            <div class="step1">
+                <p>Step3</p>
+                <p>Click "Next Round" to play again.</p>
+            </div>
+
+        </div>
+    </div>
+
+    
+</body>
+<script src="./number guesser.js"></script>
+</html>
